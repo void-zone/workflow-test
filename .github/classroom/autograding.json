@@ -1,0 +1,14 @@
+{
+    "tests": [
+        {
+            "name": "Task 1",
+            "setup": "sudo -H pip3 install -r requirements.txt",
+            "run": ". ./setenv.sh && python3 script.py && python3 grade.py testcases.test_task1",
+            "input": "",
+            "output": "",
+            "comparison": "exact",
+            "timeout": 5,
+            "points": 2
+        }
+    ]
+}
