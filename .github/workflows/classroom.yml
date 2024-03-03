@@ -1,0 +1,26 @@
+name: GitHub Classroom Workflow
+
+on:
+  - push
+  - workflow_dispatch
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create file for setting env vars
+        env:
+          ENK_KEY: ${{ secrets.ENK_KEY }}
+        run: |
+          echo "#!/bin/sh" > setenv.sh
+          echo "export ENK_KEY=\"$ENK_KEY\"" >> setenv.sh
+          chmod +x setenv.sh
+      - uses: education/autograding@v1
