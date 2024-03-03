@@ -31,7 +31,7 @@ def harness_solar_energy(intensity, focus):
     #=================================
     #  YOUR CODE HERE
 
-    return intensity**focus
+    pass
     
     #=================================
 
@@ -55,7 +55,7 @@ def solve_riddle_of_sphinx(answer):
     
     #=================================
     #  YOUR CODE HERE
-    return answer == 'wisdom'
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -79,7 +79,7 @@ def concoct_elixir_of_life(components):
 
     #=================================
     #  YOUR CODE HERE
-    return sum(components)/len(components)
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -103,7 +103,7 @@ def decipher_harappan_script(text):
     
     #=================================
     #  YOUR CODE HERE
-    return text[::-1]
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -127,7 +127,7 @@ def trail_of_the_truth_seeker(truths_and_lies):
     
     #=================================
     #  YOUR CODE HERE
-    return (sum(truths_and_lies)/len(truths_and_lies))*100
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -153,16 +153,7 @@ def weavers_pattern(n):
     
     #=================================
     #  YOUR CODE HERE
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    
-    a, b = 0, 1
-    for _ in range(2, n+1):
-        a, b = b, a + b
-        
-    return b
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -186,7 +177,7 @@ def trade_with_ancient_merchants(coins):
     
     #=================================
     #  YOUR CODE HERE
-    return coins * 0.25
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -213,14 +204,7 @@ def challenge_of_royal_guard(number):
     
     #=================================
     #  YOUR CODE HERE
-    if number <= 1:
-        return False
-    
-    for i in range(2, number):
-        if number % i == 0:
-            return False
-    
-    return True
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -245,7 +229,7 @@ def bridge_of_echoes(string1, string2):
     
     #=================================
     #  YOUR CODE HERE
-    return ' '.join([string1, string2])
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -269,11 +253,7 @@ def whispers_of_the_indus(phrase):
     
     #=================================
     #  YOUR CODE HERE
-    vowels = 0
-    for i in phrase:
-        if i in 'aeiou':
-            vowels += 1
-    return vowels
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -297,7 +277,7 @@ def navigate_the_labyrinth(phrase):
         
     #=================================
     #  YOUR CODE HERE
-    return ''.join([i[0] for i in phrase.split(' ')])
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -323,7 +303,7 @@ def mirror_of_saraswati(text):
         
     #=================================
     #  YOUR CODE HERE
-    return text == text[::-1]
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -347,13 +327,7 @@ def balance_of_the_eternal_elements(elements):
         
     #=================================
     #  YOUR CODE HERE
-    count = {}
-    for i in elements:
-        if count.get(i):
-            count[i] += 1
-        else:
-            count[i] = 1
-    return count
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -378,12 +352,7 @@ def merchants_ledger(ledger, threshold):
       
     #=================================
     #  YOUR CODE HERE
-    transactions = [float(i) for i in ledger.split(',')]
-    result = 0
-    for i in transactions:
-        if i > threshold:
-            result += i
-    return result
+    pass
     #=================================
 
 #-------------------------------------------------------------
@@ -410,14 +379,7 @@ def alchemists_formula(numbers):
           
     #=================================
     #  YOUR CODE HERE
-    import math
-    
-    sum_of_squares = sum(i**2 for i in numbers)
-    result = math.sqrt(sum_of_squares) * math.log10(math.prod(numbers))
-    
-    final_result = int(pow(result, sum(numbers)/len(numbers)))
-    
-    return final_result
+    pass
     #=================================
 
 #-------------------------------------------------------------
